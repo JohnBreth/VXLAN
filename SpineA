@@ -62,6 +62,7 @@ interface Ethernet2/1
   no switchport
   medium p2p
   ip unnumbered loopback0
+  ip ospf network point-to-point
   ip router ospf OSPF_UNDERLAY_NET area 0.0.0.0
   ip pim sparse-mode
   no shutdown

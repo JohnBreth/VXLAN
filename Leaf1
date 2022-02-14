@@ -62,6 +62,8 @@ vrf context TENANT1
     route-target both auto
     route-target both auto evpn
 vrf context management
+hardware access-list tcam region vpc-convergence 0
+hardware access-list tcam region arp-ether 256
 
 interface mgmt0
   vrf member management
